@@ -1,0 +1,174 @@
+* {box-sizing:border-box}
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+header{
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    background-image: url(taj-mahal.jpg);
+    height: 500px;
+    background-size: 100% 100%;
+    margin-top: 50px;
+
+    min-height: 200px;
+}
+header a {text-decoration: none;}
+header a:hover {color:#8f92b2;
+    transition: color 10s ease-out;}
+header a:link { color:#ffffff;}
+header a:visited {color: #edf5f5;}
+nav     {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    background-color: white;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-right: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 2em;
+    font-size: 1.2em;
+}
+nav li {
+    display: inline;
+    padding-left: 2em;
+    width: 30%;
+}
+nav a:link {color: #3f2860;}
+nav a:visited {color: #497777;}
+nav a:hover {color: #a26100; }
+nav a { text-decoration: none;}
+#wrapper {
+    background-color: cadetblue;
+    padding: 2em;
+}
+#flow {
+    display:block;
+}
+.home{
+    height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+}
+.row{
+    width:100%;
+}
+.column{
+    flex:50%;
+    padding:5px;
+}
+form{
+    display:flex;
+    flex-flow: column nowrap;
+}
+input, datalist textarea{
+    margin-bottom:.5em;
+}
+#stone1{
+    height:330px;
+    width:322px;
+    background-image: url("stonefireplacebasement.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-content: center;
+    background-position: center;
+
+}
+#stone2{
+    height:330px;
+    width: 440px;
+    background-image: url("stonechimney.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#brickpeer{
+    height:330px;
+    width: 420px;
+    background-image: url("brickpeer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#fancybrick{
+    height:330px;
+    width: 382px;
+    background-image: url("fancybrick.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#block{
+    height:330px;
+    width: 420px;
+    background-image: url("blockrepair.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#block2{
+    height:330px;
+    width: 247px;
+    background-image: url("block.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@media (min-width: 600px){
+    form{
+        width: 60%;
+        max-width: 40em;
+        display:grid;
+        grid-gap:1em;
+        grid-template-columns: 9em 1fr;
+        grid-template-rows: auto;
+    }
+    input[type="submit"]{
+        grid-column:2/3;
+        width:9em;
+    }
+    nav ul {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    nav li {
+        width: 7em;
+    }
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #flow{
+        display:flex;
+        flex-direction: row;
+    }
+    .row{
+        display:flex;}}
+@media (min-width:1024px){
+    header{
+        font-size:120%;
+    }
+    nav {
+        font-weight:bold;
+    }
+    .home{
+        height:50vh;
+        padding-top:5em;
+        padding-left: 8em;
+    }
+    .content{
+        height:30vh;
+        padding-top:2em;
+        padding-left:8em;
+    }
+    #wrapper {
+        margin:auto;
+        width: 80%;
+    }
+}
